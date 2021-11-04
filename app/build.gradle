@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+apply from: "../module.gradle"
+
+android {
+    defaultConfig {
+        applicationId "com.cl.wanandroid"
+    }
+}
+
+dependencies {
+
+    //Android官方库
+    implementation("androidx.core:core-ktx:${versions.androidx_core}")
+    implementation("androidx.appcompat:appcompat:${versions.androidx_appcompat}")
+    implementation("com.google.android.material:material:${versions.material}")
+    implementation("androidx.constraintlayout:constraintlayout:${versions.androidx_constraintlayout}")
+    implementation("androidx.recyclerview:recyclerview:${versions.androidx_recyclerview}")
+
+    //测试库
+    testImplementation("junit:junit:${versions.junit}")
+    androidTestImplementation("androidx.test.ext:junit:${versions.androidx_junit}")
+    androidTestImplementation("androidx.test.espresso:espresso-core:${versions.espresso_core}")
+
+    //右滑返回库
+    implementation("me.imid.swipebacklayout.lib:library:${versions.swipebacklayout}")
+
+    //日志库
+    implementation ("com.orhanobut:logger:${versions.logger}")
+}

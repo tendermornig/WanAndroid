@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="colorIcLauncherBackgroundStart">@color/color_blue</item>
+        <item name="colorIcLauncherBackgroundEnd">@color/color_blue</item>
+        <item name="colorLoginBg">@color/color_blue</item>
+        <item name="colorBottomBarOverlay">@color/color_gray_light_a80</item>
+        <item name="colorMineBlurOverlay">@color/color_black_a05</item>
+        <item name="colorAboutMeBlurOverlay">@color/color_black_a05</item>
+        <item name="colorScrollbar">@color/color_black_a13</item>
+        <item name="colorHeartUncheckedOnMain">@color/color_blue</item>
+        <item name="colorHeartOuter">@color/color_orange</item>
+        <item name="colorHeartCenter">@color/color_orange_light</item>
+    </style>
+
+    <style name="AppTheme.Main">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+    </style>
+</resources>
