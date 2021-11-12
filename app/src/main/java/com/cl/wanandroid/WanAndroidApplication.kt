@@ -21,7 +21,9 @@ class WanAndroidApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         context = applicationContext
-        Logger.addLogAdapter(AndroidLogAdapter())
+        if (BuildConfig.DEBUG) {
+            Logger.addLogAdapter(AndroidLogAdapter())
+        }
         Logger.addLogAdapter(DiskLogAdapter())
     }
 }

@@ -18,15 +18,15 @@ class LoadMoreAdapter : BaseAdapter() {
     override fun setViewData(viewData: List<BaseViewData<*>>) {
         val mutableViewData = viewData.toMutableList()
         mutableViewData.add(loadMoreViewData)
-        super.setViewData(viewData)
+        super.setViewData(mutableViewData)
     }
 
     /**
      * 重写replaceViewData 将替换条目的位置-1 这样才是正确的替换位置
      */
-    override fun replaceViewData(viewData: List<BaseViewData<*>>, position: Int) {
+    override fun replaceViewData(viewData: BaseViewData<*>, position: Int) {
         if (position in 0 until itemCount - 1) {
-            items[position] = viewData[position]
+            items[position] = viewData
             notifyItemChanged(position)
         }
     }
@@ -36,7 +36,7 @@ class LoadMoreAdapter : BaseAdapter() {
      */
     override fun addViewData(viewData: BaseViewData<*>) {
         val oldSize = itemCount - 1
-        items.add(viewData)
+        items.add(oldSize, viewData)
         notifyItemChanged(oldSize)
     }
 
@@ -44,9 +44,9 @@ class LoadMoreAdapter : BaseAdapter() {
      * 重写addViewData 将替换条目的位置-1 道理相同
      */
     override fun addViewData(viewData: List<BaseViewData<*>>) {
-        val oldSize = itemCount
-        items.addAll(viewData)
-        notifyItemRangeInserted(oldSize, itemCount)
+        val oldSize = itemCount -1
+        items.addAll(oldSize, viewData)
+        notifyItemRangeInserted(oldSize, viewData.size)
     }
 
     override fun removeViewData(position: Int): BaseViewData<*>? {

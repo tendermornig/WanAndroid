@@ -19,6 +19,8 @@ dependencies {
     implementation("com.google.android.material:material:${versions.material}")
     implementation("androidx.constraintlayout:constraintlayout:${versions.androidx_constraintlayout}")
     implementation("androidx.recyclerview:recyclerview:${versions.androidx_recyclerview}")
+    implementation("androidx.activity:activity-ktx:${versions.androidx_activity_ktx}")
+    implementation("androidx.fragment:fragment-ktx:${versions.androidx_fragment_ktx}")
 
     //测试库
     testImplementation("junit:junit:${versions.junit}")
@@ -30,4 +32,10 @@ dependencies {
 
     //日志库
     implementation ("com.orhanobut:logger:${versions.logger}")
+
+    //顶部刷新库
+    implementation("in.srain.cube:ultra-ptr:${versions.ptr}")
+
+    // 加载动画
+    implementation("com.ldoublem.loadingview:loadingviewlib:${versions.loadingview}")
 }

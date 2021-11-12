@@ -1,6 +1,19 @@
 <resources>
     <string name="app_name">BasicRes</string>
 
-    <string name="http_no_net">网络连接失败，请检查网络设置</string>
-    <string name="http_error">访问出错，请稍后重试</string>
+    <string name="refresh_pull_down_to_refresh">下拉刷新</string>
+    <string name="refresh_refreshing">加载中</string>
+    <string name="refresh_release_to_refresh">释放更新</string>
+    <string name="refresh_refresh_complete">更新完成</string>
+
+    <string name="page_state_no_network">无网络连接，请检查网络设置</string>
+    <string name="page_state_network_error">出了点意外，内容加载失败</string>
+    <string name="page_state_empty">这里是空的哦</string>
+    <string name="action_set_network">设置网络</string>
+    <string name="action_retry">重新加载</string>
+
+    <string name="load_more_loading">正在加载</string>
+    <string name="load_more_no_network">无网络连接，请检查网络设置</string>
+    <string name="load_more_network_error">网络异常，点击重试</string>
+    <string name="load_more_no_more">没有更多数据了</string>
 </resources>

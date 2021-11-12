@@ -15,6 +15,8 @@ abstract class BaseActivity<VB: ViewBinding>(val inflater: (inflater: LayoutInfl
         viewBinding = inflater(layoutInflater)
         setContentView(viewBinding.root)
         setSwipeBackEnable(swipeBackEnable())
+        initView()
+        loadData()
     }
 
     /**

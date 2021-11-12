@@ -1,8 +1,17 @@
 package com.cl.wanandroid.base.list.base
 
 import com.cl.wanandroid.base.list.multitype.MultiTypeAdapter
+import com.cl.wanandroid.item.LoadMoreViewDelegate
+import com.cl.wanandroid.item.Test1ViewDelegate
+import com.cl.wanandroid.item.Test2ViewDelegate
 
 open class BaseAdapter : MultiTypeAdapter() {
+
+    init {
+        register(LoadMoreViewDelegate())
+        register(Test1ViewDelegate())
+        register(Test2ViewDelegate())
+    }
 
     /**
      * 设置列表数据 这个方法将会清空数据将传入的数据作为新的数据 并刷新列表
@@ -19,9 +28,9 @@ open class BaseAdapter : MultiTypeAdapter() {
      * @param viewData 新的数据
      * @param position 指定的替换位置
      */
-    open fun replaceViewData(viewData: List<BaseViewData<*>>, position: Int) {
+    open fun replaceViewData(viewData: BaseViewData<*>, position: Int) {
         if (position in 0 until itemCount) {
-            items[position] = viewData[position]
+            items[position] = viewData
             notifyItemChanged(position)
         }
     }
