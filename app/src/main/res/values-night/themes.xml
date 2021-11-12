@@ -14,4 +14,8 @@
         <item name="colorHeartCenter">@color/color_orange_light</item>
     </style>
 
+    <style name="AppTheme.Main">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+    </style>
+
 </resources>

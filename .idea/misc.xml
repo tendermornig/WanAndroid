@@ -3,16 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/WanAndroid/app/src/main/res/drawable-night/splash_bg.xml" value="0.2791666666666667" />
         <entry key="..\:/WanAndroid/app/src/main/res/drawable/splash_bg.xml" value="0.27374872318692545" />
         <entry key="..\:/WanAndroid/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/WanAndroid/app/src/main/res/layout/fragment_home.xml" value="0.21499013806706113" />
         <entry key="..\:/WanAndroid/app/src/main/res/layout/item_test1.xml" value="0.2" />
         <entry key="..\:/WanAndroid/app/src/main/res/layout/item_test2.xml" value="0.14537037037037037" />
-        <entry key="..\:/WanAndroid/app/src/main/res/layout/view_error.xml" value="0.25885416666666666" />
+        <entry key="..\:/WanAndroid/app/src/main/res/layout/view_error.xml" value="0.2" />
         <entry key="..\:/WanAndroid/app/src/main/res/layout/view_loading.xml" value="0.25885416666666666" />
         <entry key="..\:/WanAndroid/app/src/main/res/layout/view_recycler_footer.xml" value="0.25885416666666666" />
         <entry key="..\:/WanAndroid/app/src/main/res/layout/view_recycler_header.xml" value="0.25885416666666666" />
-        <entry key="..\:/WanAndroid/app/src/main/res/layout/view_x_recycler.xml" value="0.25885416666666666" />
+        <entry key="..\:/WanAndroid/app/src/main/res/layout/view_x_recycler.xml" value="0.2" />
         <entry key="..\:/WanAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>

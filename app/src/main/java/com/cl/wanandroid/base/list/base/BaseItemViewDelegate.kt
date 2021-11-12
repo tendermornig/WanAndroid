@@ -33,7 +33,7 @@ abstract class BaseItemViewDelegate<T : BaseViewData<*>, VH : RecyclerView.ViewH
         if (null != recyclerView) {
             val position: Int = holder.absoluteAdapterPosition
             val id = holder.itemId
-            //recyclerView.performItemClick(view, item, position, id)
+            recyclerView.performItemClick(view, item, position, id)
         }
     }
 
@@ -50,7 +50,7 @@ abstract class BaseItemViewDelegate<T : BaseViewData<*>, VH : RecyclerView.ViewH
         if (null != recyclerView) {
             val position = holder.absoluteAdapterPosition
             val id = holder.itemId
-            //consumed = recyclerView.performItemLongClick(view, item, position, id)
+            consumed = recyclerView.performItemLongClick(view, item, position, id)
         }
         return consumed
     }
@@ -63,7 +63,7 @@ abstract class BaseItemViewDelegate<T : BaseViewData<*>, VH : RecyclerView.ViewH
         if (null != recyclerView) {
             val position: Int = holder.absoluteAdapterPosition
             val id = holder.itemId
-            //recyclerView.performItemChildViewClick(view, item, position, id, extra)
+            recyclerView.performItemChildViewClick(view, item, position, id, extra)
         }
     }
 

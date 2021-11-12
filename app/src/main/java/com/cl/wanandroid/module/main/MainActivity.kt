@@ -4,7 +4,9 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.os.Bundle
 import android.view.MotionEvent
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.cl.wanandroid.R
@@ -16,8 +18,6 @@ import kotlin.math.abs
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
 
     override fun initView() {
-        window.setBackgroundDrawable(ColorDrawable(getThemeColor(R.attr.colorBackground)))
-
         viewBinding.vp.adapter = object : FragmentStateAdapter(this) {
             override fun getItemCount(): Int {
                 return 3

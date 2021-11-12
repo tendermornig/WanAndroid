@@ -48,7 +48,7 @@ class HomeViewModel : BaseRecyclerViewModel() {
                 )
             }
             postData(isLoadMore, viewDataList)
-            // postError(isLoadMore)
+            //postError(isLoadMore)
         }
     }
 }
